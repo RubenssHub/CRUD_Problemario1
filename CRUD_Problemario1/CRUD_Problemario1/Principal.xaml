@@ -1,0 +1,23 @@
+﻿<Window x:Class="CRUD_Problemario1.Principal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD_Problemario1"
+        mc:Ignorable="d"
+        Title="Principal" Height="450" Width="800">
+    <Grid>
+        <ListView x:Name="lvBiblioteca" Height="302" Margin="26,29,27,0" VerticalAlignment="Top">
+            <ListView.Background>
+                <ImageBrush ImageSource="Biblioteca/Principal.jpg"/>
+            </ListView.Background>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="26,352,0,0" VerticalAlignment="Top" Width="103" Height="42" Background="{x:Null}" FontFamily="Arial Black" Click="BtnAgregar_Click"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Height="42" RenderTransformOrigin="2.041,0.526" Margin="152,352,0,0" Background="{x:Null}" FontFamily="Arial Black" Click="BtnEliminar_Click"/>
+    </Grid>
+</Window>
