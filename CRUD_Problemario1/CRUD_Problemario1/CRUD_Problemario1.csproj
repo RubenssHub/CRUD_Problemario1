@@ -100,12 +100,19 @@
       <DependentUpon>Agregar.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Eliminar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Principal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Eliminar.xaml.cs">
+      <DependentUpon>Eliminar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EliminarDatos.cs" />
     <Compile Include="Principal.xaml.cs">
       <DependentUpon>Principal.xaml</DependentUpon>
@@ -136,6 +143,7 @@
   <ItemGroup>
     <Resource Include="Biblioteca\guitar-3567767_960_720.jpg" />
     <Resource Include="Biblioteca\Principal.jpg" />
+    <Resource Include="Biblioteca\Eliminar.jpg" />
     <Content Include="Database1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -1,0 +1,18 @@
+﻿<Window x:Class="CRUD_Problemario1.Eliminar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD_Problemario1"
+        mc:Ignorable="d"
+        Title="Eliminar" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Biblioteca/Eliminar.jpg"/>
+        </Grid.Background>
+        <Label x:Name="lbEliminar" Content="Eliminar una cancion" HorizontalAlignment="Left" Margin="27,28,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="24"/>
+        <TextBox x:Name="txtBoxEliminar" HorizontalAlignment="Left" Height="39" Margin="27,71,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="374"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="460,71,0,0" VerticalAlignment="Top" Width="132" Height="39" Background="{x:Null}" Foreground="#FFFDFDFD" FontFamily="Arial Black" FontSize="18" BorderBrush="#FFFB0000" Click="BtnEliminar_Click"/>
+
+    </Grid>
+</Window>
